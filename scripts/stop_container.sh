@@ -1,14 +1,13 @@
 #!/bin/bash
 set -e
 
-# Get running container IDs
-container_ids=$(docker ps -q)
-
-# Stop and remove containers if any exist
-if [ -n "$container_ids" ]; then
-  echo "Stopping and removing containers..."
-  docker rm -f $container_ids
-else
-  echo "No running containers found."
+# Stop and remove old container if exists
+if [ "$(docker ps -aq -f name=flask-app)" ]; then
+    docker stop flask-app || true
+    docker rm flask-app || true
 fi
+
+# Run new container
+docker run -d --name flask-app -p 5000:5000 sravyabolla/simple-python-flask-app:latest
+
 
