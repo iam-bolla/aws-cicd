@@ -27,7 +27,7 @@ if you’re also new into devops/cloud → let’s vibe, share tips, maybe break
 ---
 ⭐ if you find this fun/useful, it means a lot ✨
 
-# # 🚀 Part 2: AWS CI/CD with CodePipeline & CodeBuild
+# # 🚀 Part 1: AWS CI/CD with CodePipeline & CodeBuild
 
 This repository demonstrates **Continuous Integration (CI)** using **AWS CodePipeline** and **AWS CodeBuild**.  
 We’ll build, test, and push a Docker image securely using AWS services, while managing secrets with **AWS Systems Manager Parameter Store**.
