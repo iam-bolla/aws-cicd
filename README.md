@@ -1,5 +1,8 @@
 # AWS CI/CD Series 🚀
 
+
+ -**st
+
 hey folks 👋 this is my lil journey as a fresher exploring devops & cloud. not chasing jobs rn but fueling my curiosity.  
 this repo is like a series where i break down **complete CI/CD on AWS** step by step (super beginner vibes).  
 
